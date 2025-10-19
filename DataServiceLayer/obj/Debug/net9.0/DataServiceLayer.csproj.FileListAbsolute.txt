@@ -1,0 +1,12 @@
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\bin\Debug\net9.0\DataServiceLayer.deps.json
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\bin\Debug\net9.0\DataServiceLayer.dll
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\bin\Debug\net9.0\DataServiceLayer.pdb
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.csproj.AssemblyReference.cache
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.AssemblyInfoInputs.cache
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.AssemblyInfo.cs
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.csproj.CoreCompileInputs.cache
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.dll
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\refint\DataServiceLayer.dll
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.pdb
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\ref\DataServiceLayer.dll
