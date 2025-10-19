@@ -10,3 +10,4 @@ C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServi
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\refint\DataServiceLayer.dll
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.pdb
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\ref\DataServiceLayer.dll
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\DataServiceLayer\obj\Debug\net9.0\DataServiceLayer.sourcelink.json
