@@ -44,9 +44,10 @@ public class ProductsController : ControllerBase
     public IActionResult GetProductsByCategory(int categoryId)
     {
         var products = _dataService.GetProductsByCategory(categoryId)
-            .Select(x => CreateProductModel(x));
+            .Select(x => CreateProductModel(x))
+            .ToList();
 
-        if (products == null || !products.Any())
+        if (products == null || products.Count == 0)
         {
             return NotFound();
         }
@@ -57,11 +58,12 @@ public class ProductsController : ControllerBase
     [HttpGet("name/{name}")]
     public IActionResult GetProductsByName(string name)
     {
-        var products = _dataService.GetProductsByName(name);
+        var products = _dataService.GetProductsByName(name)
+            .ToList();
 
-        if (products == null || !products.Any())
+        if (products == null || products.Count == 0)
         {
-            return null;
+            return NotFound();
         }
 
         return Ok(products);
@@ -72,6 +74,7 @@ public class ProductsController : ControllerBase
     {
         var model = _mapper.Map<ProductModel>(product);
         model.Url = GetUrl(nameof(GetProduct), new { id = product.Id });
+        model.CategoryName = product.Category?.Name;
         return model;
     }
 
