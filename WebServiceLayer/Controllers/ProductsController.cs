@@ -54,14 +54,14 @@ public class ProductsController : ControllerBase
         return Ok(products);
     }
 
-    [HttpGet]
+    [HttpGet("name/{name}")]
     public IActionResult GetProductsByName(string name)
     {
         var products = _dataService.GetProductsByName(name);
 
         if (products == null || !products.Any())
         {
-            return NotFound();
+            return null;
         }
 
         return Ok(products);
