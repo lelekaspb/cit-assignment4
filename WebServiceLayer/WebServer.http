@@ -26,3 +26,28 @@ Content-Type: application/json
 }
 
 ###
+
+PUT {{WebServer_HostAddress}}/api/categories/9
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 9,
+  "name":"updated name",
+  "description": "updated description"
+}
+
+###
+
+GET {{WebServer_HostAddress}}/api/products/category/1
+Accept: application/json
+
+###
+
+GET {{WebServer_HostAddress}}/api/products/1
+Accept: application/json
+
+###
+
+GET {{WebServer_HostAddress}}/api/products?name=test
+Accept: application/json

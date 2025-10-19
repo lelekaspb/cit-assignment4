@@ -72,7 +72,23 @@ public class CategoriesController : ControllerBase
         return NotFound();
     }
 
+    [HttpPut("{id}")]
+    public IActionResult UpdateCategory(int id, UpdateCategoryModel model)
+    {
+        var category = _dataService.GetCategory(id);
 
+        if (category == null)
+        {
+            return NotFound();
+        }
+
+        category.Name = model.Name;
+        category.Description = model.Description;
+
+        _dataService.UpdateCategory(category.Id, category.Name, category.Description);
+
+        return NoContent();
+    }
 
     private CategoryModel CreateCategoryModel(Category category)
     {
