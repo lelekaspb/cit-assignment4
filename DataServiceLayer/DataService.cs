@@ -119,8 +119,7 @@ public class DataService : IDataService
     public Order? GetOrder(int id)
     {
         using var db = new NorthwindContext(_connectString);
-        return db.Orders
-            // OrderDetails is populated by Include; use null-forgiving to satisfy nullable annotations
+        return db.Orders            
             .Include(o => o.OrderDetails!)
                 .ThenInclude(od => od.Product!)
                     .ThenInclude(p => p.Category!)
