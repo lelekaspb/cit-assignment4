@@ -1,3 +1,4 @@
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\bin\Debug\net9.0\DataServiceLayer.staticwebassets.endpoints.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\bin\Debug\net9.0\config.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\bin\Debug\net9.0\WebServiceLayer.staticwebassets.endpoints.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\bin\Debug\net9.0\WebServiceLayer.exe
@@ -31,6 +32,7 @@ C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServic
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\WebServiceLayer.AssemblyInfo.cs
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\WebServiceLayer.csproj.CoreCompileInputs.cache
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\WebServiceLayer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\WebServiceLayer.sourcelink.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\bov-1\study\ruc\semester1\assignments\backend\cit-assignment4\WebServiceLayer\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

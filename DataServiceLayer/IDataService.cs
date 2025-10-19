@@ -19,8 +19,8 @@ public interface IDataService
     /////////////////////////////////////////////////
 
     Product? GetProduct(int id);
-    IList<ProductSearchModel> GetProductByName(string search);
-    IList<Product> GetProductByCategory(int categoryId);
+    IList<ProductSearchModel> GetProductsByName(string search);
+    IList<Product> GetProductsByCategory(int categoryId);
 
 
     /////////////////////////////////////////////////
@@ -29,7 +29,7 @@ public interface IDataService
 
     Order? GetOrder(int id);
     IList<OrderSummaryModel> GetOrdersByShipName(string shipName);
-    IList<OrderSummaryModel> GetOrders();
+    IList<OrderSummaryModel> GetAllOrders();
 
     /////////////////////////////////////////////////
     // Order Details

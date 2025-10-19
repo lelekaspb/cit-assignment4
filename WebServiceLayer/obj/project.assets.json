@@ -311,7 +311,10 @@
         },
         "runtime": {
           "bin/placeholder/DataServiceLayer.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj": {}
+    "c:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj": {
+    "c:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj",
+        "projectUniqueName": "c:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj",
         "projectName": "DataServiceLayer",
-        "projectPath": "C:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj",
+        "projectPath": "c:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\DataServiceLayer.csproj",
         "packagesPath": "C:\\Users\\bov-1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\obj\\",
+        "outputPath": "c:\\Users\\bov-1\\study\\ruc\\semester1\\assignments\\backend\\cit-assignment4\\DataServiceLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -71,6 +71,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

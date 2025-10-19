@@ -94,7 +94,7 @@ public class DataService : IDataService
     }
 
     // 7. Get products containing a substring
-    public IList<ProductSearchModel> GetProductByName(string search)
+    public IList<ProductSearchModel> GetProductsByName(string search)
     {
         using var db = new NorthwindContext(_connectString);
         return db.Products
@@ -105,7 +105,7 @@ public class DataService : IDataService
     }
 
     // 8. Get products by category ID
-    public IList<Product> GetProductByCategory(int categoryId)
+    public IList<Product> GetProductsByCategory(int categoryId)
     {
         using var db = new NorthwindContext(_connectString);
         return db.Products.Include(p => p.Category).Where(p => p.CategoryId == categoryId).ToList();
@@ -120,9 +120,10 @@ public class DataService : IDataService
     {
         using var db = new NorthwindContext(_connectString);
         return db.Orders
-            .Include(o => o.OrderDetails)
-                .ThenInclude(od => od.Product)
-                    .ThenInclude(p => p.Category)
+            // OrderDetails is populated by Include; use null-forgiving to satisfy nullable annotations
+            .Include(o => o.OrderDetails!)
+                .ThenInclude(od => od.Product!)
+                    .ThenInclude(p => p.Category!)
             .FirstOrDefault(o => o.Id == id);
     }
 
@@ -137,7 +138,7 @@ public class DataService : IDataService
     }
 
     // 3. List all orders
-    public IList<OrderSummaryModel> GetOrders()
+    public IList<OrderSummaryModel> GetAllOrders()
     {
         using var db = new NorthwindContext(_connectString);
         return db.Orders.Select(o => new OrderSummaryModel { Id = o.Id, OrderDate = o.Date, ShipName = o.ShipName ?? string.Empty, ShipCity = o.ShipCity ?? string.Empty }).ToList();
@@ -158,7 +159,14 @@ public class DataService : IDataService
     public IList<OrderDetail> GetOrderDetailsByProductId(int productId)
     {
         using var db = new NorthwindContext(_connectString);
-        return db.OrderDetails.Include(od => od.Product).Include(od => od.Order).Where(od => od.ProductId == productId).OrderBy(od => od.OrderId).ToList();
+     
+        return db.OrderDetails
+            .Include(od => od.Product)
+            .Include(od => od.Order)
+            .Where(od => od.ProductId == productId)
+            .OrderByDescending(od => od.Order!.Date)
+            .ThenBy(od => od.OrderId)
+            .ToList();
     }
 }
 

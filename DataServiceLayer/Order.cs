@@ -10,5 +10,5 @@ public class Order
     public string? ShipCity { get; set; }
 
     // Mapping relationships
-        public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+    public ICollection<OrderDetail>? OrderDetails { get; set; }
 }

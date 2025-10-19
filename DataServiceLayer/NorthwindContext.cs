@@ -40,8 +40,8 @@ public class NorthwindContext : DbContext
         modelBuilder.Entity<Category>().ToTable("categories");
         modelBuilder.Entity<Product>().ToTable("products");
         modelBuilder.Entity<Order>().ToTable("orders");
-        modelBuilder.Entity<OrderDetail>().ToTable("order_details");
-
+        modelBuilder.Entity<OrderDetail>().ToTable("orderdetails"); 
+        
         // Category
         modelBuilder.Entity<Category>().Property(x => x.Id).HasColumnName("categoryid");
         modelBuilder.Entity<Category>().Property(x => x.Name).HasColumnName("categoryname");
@@ -82,13 +82,13 @@ public class NorthwindContext : DbContext
             .WithMany(p => p.OrderDetails)
             .HasForeignKey(od => od.ProductId);
 
-        // Order mappings - map properties to lowercase column names
-        modelBuilder.Entity<Order>().Property(x => x.Id).HasColumnName("id");
-        modelBuilder.Entity<Order>().Property(x => x.Date).HasColumnName("date");
-        modelBuilder.Entity<Order>().Property(x => x.Required).HasColumnName("required");
-        modelBuilder.Entity<Order>().Property(x => x.Shipped).HasColumnName("shipped");
-        modelBuilder.Entity<Order>().Property(x => x.Freight).HasColumnName("freight");
-        modelBuilder.Entity<Order>().Property(x => x.ShipName).HasColumnName("shipname");
-        modelBuilder.Entity<Order>().Property(x => x.ShipCity).HasColumnName("shipcity");
+    // Order mappings - align with the project's SQL dump (columns: orderid, orderdate, requireddate, shippeddate, etc.)
+    modelBuilder.Entity<Order>().Property(x => x.Id).HasColumnName("orderid");
+    modelBuilder.Entity<Order>().Property(x => x.Date).HasColumnName("orderdate");
+    modelBuilder.Entity<Order>().Property(x => x.Required).HasColumnName("requireddate");
+    modelBuilder.Entity<Order>().Property(x => x.Shipped).HasColumnName("shippeddate");
+    modelBuilder.Entity<Order>().Property(x => x.Freight).HasColumnName("freight");
+    modelBuilder.Entity<Order>().Property(x => x.ShipName).HasColumnName("shipname");
+    modelBuilder.Entity<Order>().Property(x => x.ShipCity).HasColumnName("shipcity");
     }
 }
